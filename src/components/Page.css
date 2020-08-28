@@ -1,0 +1,55 @@
+.protected-container {
+    background-color: #131313;
+    position: relative;
+    top: 35%;
+    border-radius: 5px;
+    padding: 20px;
+    
+}
+.faq-container,.protected-container, .admin-container {
+    position: relative;
+    top: 35%;
+    background-color: #131313;
+    width: 95%;
+    border-radius: 5px;
+    padding: 20px;
+    min-height: 400px;
+}
+.protected-container {
+  min-height: 520px;
+}
+.protected-container img {
+    display: block;
+    margin: auto;
+    width: 500px;
+    max-width: 90%;
+}
+
+.adminForm-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.formMessage {
+  min-height: 25px;
+  margin-bottom: 20px;
+}
+
+.red {
+  color: red;
+}
+
+.success {
+  color: #9acd32;
+}
+
+  @media only screen and (max-width: 960px) {
+    .protected-container, .faq-container, .admin-container {
+      position: relative;
+      top: 25%;
+      max-width: 90%;
+    }
+    .protected-content {
+        margin-top: 40px;
+    }
+  }
