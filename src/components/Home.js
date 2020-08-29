@@ -20,7 +20,7 @@ const Home = ({ inputValue, invalidCode, setInputValue, checkCode }) => {
                         <Form.Label>Enter your code</Form.Label>
                         <Form.Control
                             type="text"
-                            placeholder="ex: 0x23sdesw390ndsfyl49"
+                            placeholder="ex: AABBCCDDEE"
                             value={inputValue}
                             onChange={(e) => setInputValue(e.target.value)}
                         />

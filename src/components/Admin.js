@@ -21,7 +21,6 @@ export default function Admin() {
         }
     });
     useEffect(() => {
-        console.log(userData.email)
         database.ref('admin').once('value')
             .then((snapshot) => {
                 const snapArr = snapshot.val();

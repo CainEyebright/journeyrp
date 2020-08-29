@@ -20,16 +20,39 @@ ReactDOM.render(
 );
 
 
-firebase.auth().onAuthStateChanged((user) => {
-    console.log(user)
+firebase.auth().onAuthStateChanged((user) => {  
+    console.log(/* eslint-disable */`
+    ____________________________________________________
+
+    ${user ? `Rawwwwrrrrrrrrrrrrr, yourrrrrrrrrrrr email issssssss
+              ${user.email}` 
+           : `Rawrrrrrrrrr, what arrrrrre you looking forrrrrrrrr?           
+           `}         
+    ----------------------------------------------------
+         \\ 
+          \\                    / \\  //\\
+           \\    |\\___/|      /   \\//  \\\\
+                /0  0  \\__  /    //  | \\ \\    
+               /     /  \\/_/    //   |  \\  \\  
+               @_^_@'/   \\/_   //    |   \\   \\ 
+               //_^_/     \\/_ //     |    \\    \\
+            ( //) |        \\///      |     \\     \\
+          ( / /) _|_ /   )  //       |      \\     _\\
+        ( // /) '/,_ _ _/  ( ; -.    |    _ _\\.-~        .-~~~^-.
+      (( / / )) ,-{        _      '-.|.-~-.           .~         '.
+     (( // / ))  '/\\      /                 ~-. _ .-~      .-~^-.  \\
+     (( /// ))      '.   {            }                   /      \\  \\
+      (( / ))     .----~-.\\        \\-'                 .~         \\  '. \\^-.
+                 ///.----..>        \\             _ -~             '.  ^-'  ^-_
+                   ///-._ _ _ _ _ _ _}^ - - - - ~                     ~-- ,.-~
+                                                                      /.-~
+    `)
     if(user) {
-      console.log('Log in');
       sessionStorage.setItem('isLoggedIn', true);
       sessionStorage.setItem('uid', user.uid);
       sessionStorage.setItem('photoURL', user.photoURL);
 
     } else {
-      console.log('Log out');
       sessionStorage.setItem('isLoggedIn', false);
       sessionStorage.setItem('uid', '');
       sessionStorage.setItem('photoURL', '');
