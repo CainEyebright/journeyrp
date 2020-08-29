@@ -21,14 +21,15 @@ export default function Admin() {
         }
     });
     useEffect(() => {
+        console.log(userData.email)
         database.ref('admin').once('value')
             .then((snapshot) => {
                 const snapArr = snapshot.val();
-                snapArr.uid.map((uid) => {
-                    if (uid === userData.uid) {
+                snapArr.email.map((email) => {
+                    if (email === userData.email) {
                         setHasAdminCreds(true);
                     }
-                    return uid;
+                    return email;
                 })
             });
     }, [userData]);

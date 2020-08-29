@@ -1,14 +1,15 @@
 import * as firebase from 'firebase';
 
+// Thad's config data
 const config = {
-    apiKey: "AIzaSyAZv9jNlXmTj2XsYR3VVw8FEvBddOAQATQ",
-    authDomain: "fir-demo-a1ab2.firebaseapp.com",
-    databaseURL: "https://fir-demo-a1ab2.firebaseio.com",
-    projectId: "fir-demo-a1ab2",
-    storageBucket: "fir-demo-a1ab2.appspot.com",
-    messagingSenderId: "632643762973",
-    appId: "1:632643762973:web:24fcf70228049a834dfff4",
-    measurementId: "G-3BPBJH61QC"
+    apiKey: "AIzaSyBKy7vpQHvTgRW5KxDZjNIVSQM3p6L2FNg",
+    authDomain: "jrpscholars.firebaseapp.com",
+    databaseURL: "https://jrpscholars.firebaseio.com",
+    projectId: "jrpscholars",
+    storageBucket: "jrpscholars.appspot.com",
+    messagingSenderId: "241403665599",
+    appId: "1:241403665599:web:d0732ad22845efcc157a0a",
+    measurementId: "G-XXDHT5JYVV"
   };
 
   firebase.initializeApp(config);

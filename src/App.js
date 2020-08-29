@@ -26,6 +26,7 @@ export default function App() {
     console.log("Mounted")
   }, []);
   const checkCode = (inputValue) => {
+    inputValue = inputValue.toUpperCase();
     database.ref('lore').once('value')
       .then((snapshot) => {
         snapshot.forEach((childsnap) => {

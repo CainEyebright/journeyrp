@@ -35,7 +35,7 @@ const Home = ({ inputValue, invalidCode, setInputValue, checkCode }) => {
                     </div>
                     <div className="recaptcha">
                     <Reaptcha 
-                            sitekey="6LeEzcMZAAAAAF8x9EtM_sNLe1evEBO_86Oiqw0M" 
+                            sitekey="6LdpIMQZAAAAAJMFTK5xDG2sUnE1EyaCuq8I0Msn" 
                             onVerify={onVerify} 
                            
                     />
